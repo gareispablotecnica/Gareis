@@ -1,0 +1,311 @@
+* {
+    /* Quitamos los márgenes y rellenos predeterminados */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    /* Altura */
+    height: 85px;
+    /* background: blue; */
+    /* Flex para ubicar los elementos */
+    display: flex;
+    /* Sirve para distribuir el espacio entre los elementos */
+    justify-content: space-between;
+}
+
+.encabezado img {
+    /* Transición para el efecto de hover */
+    transition: 0.5s ease-in-out;
+}
+
+.encabezado img:hover {
+    /* Sombra ----------> derecho, abajo, profundiad , color */
+    filter: drop-shadow(1px 1px 1px black);
+    /* Transformación de escala de imagen  */
+    transform: scale(0.9);
+}
+
+.menu {
+    display: flex;
+    /* Alineación vertical */
+    align-items: center;
+    /* Margen derecho */
+    margin-right: 10px;
+}
+
+.menu a {
+    margin-right: 10px;
+    /* Quitamos la decoración del texto */
+    text-decoration: none;
+    /* Tamaño de fuente */
+    font-size: 18px;
+    /* Color del texto */
+    color: #2C3947;
+}
+
+.btncontactos {
+    /* Color de fondo */
+    background: #2C3947;
+    padding: 10px;
+    /* Radio de borde */
+    border-radius: 10px;
+    color: whitesmoke !important;
+    transition: 0.5s ease-in-out;
+}
+
+.btncontactos:hover {
+    transform: scale(0.9);
+}
+
+.ayestaras {
+    padding-bottom: 3px;
+}
+
+.ayestaras:hover {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #fff, #2C3947)1;
+}
+
+.carousel-inner img {
+    height: 85vh;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    /* Distribución de los elementos en múltiples filas */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Espacio entre los elementos */
+    gap: 25px;
+    background: #f5f5f5;
+}
+
+.Tarjetas{
+    width: 300px;
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    /* Ocultar el contenido que excede el contenedor */
+    overflow: hidden;
+}
+
+.Tarjetas:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.18);
+}
+
+.Tarjetas img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.Tarjetas h1{
+    font-size: 24px;
+    color: #222;
+    /* Margen inferior */
+    margin-bottom: 10px;
+}
+
+.Tarjetas h2{
+    font-size: 22px;
+    color: green;
+    margin-bottom: 10px;
+}
+
+.Tarjetas p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.Tarjetas h3{
+    width: 118px;
+    background: #0d6efd;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.contenedor_form{
+    margin: 50px auto;
+    width: 400px;
+    height: 100px;
+    box-shadow: 2px 5px 5px black;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.contenedor_form input{
+    border-radius: 10px;
+    height: 35px;
+}
+
+.contenedor_form button{
+    height: 40px;
+    width: 90px;
+    border-radius: 15px;
+    background-color: #2C3947;
+    color: whitesmoke;
+    transition: 0.5s ease-in-out;
+}
+
+.contenedor_form button:hover{
+    background: linear-gradient(to right, #f1f1f1 , #2C3947);
+    transform: scale(0.9);
+    box-shadow: 1px 1px 3px black;
+}
+
+footer{
+    background: #efefef;
+    padding: 70px 10% 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+
+.info{
+    width: 33%;
+}
+
+.nav{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes iframe{
+    width: 350px;
+    height: 100px;
+    border-radius: 20px;
+    margin-left: -75px;
+    margin-top: 15px;
+    box-shadow: 2px 3px 5px black;
+
+}
+
+.info img{
+    width: 35px;
+    vertical-align: middle;
+}
+
+.info h2{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 38px;
+    color: #d48a2f;
+    margin-bottom: 25px;
+}
+
+.info p{
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 470px;
+}
+
+.nav h1{
+    font-size: 42px;
+    margin-bottom: 25px;
+}
+
+.nav a{
+    display: block;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+
+.redes h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.redes .iconos{
+    display: flex;
+    gap: 18px;
+}
+
+.redes img{
+    width: 65px;
+    height: 65px;
+    padding: 18px;
+    border-radius: 50%;
+    background: #2f2f2f;
+    object-fit: contain;
+    opacity: 0.45;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.redes img:hover{
+    opacity: 1;
+    background: #156ef5;
+    transform: translateY(-6px) scale(1.08);
+}
+
+
+.btnfav{
+    border: none ;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+.btnfav:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(1px 1px 2px red); 
+}
+
+@media (max-width:750px) {
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .encabezado img{
+        width: 150px;
+        height: 150px;
+        margin: 5px auto;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+
+    .menu a{
+        gap: 10px;
+        margin: 8px auto;
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info p{
+        font-size: 18px;
+        line-height: 35px;
+    }
+}

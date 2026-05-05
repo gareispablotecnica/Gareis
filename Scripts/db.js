@@ -46,5 +46,13 @@ export const DB=[
         Stock:20,
         Descripcion:'asasasasas',
         Imagen:'../src/Productos/e.jpg'
+    },
+    {
+        ID:6,
+        Nombre:'Campera',
+        Precio:2000,
+        Stock:20,
+        Descripcion:'asasasasas',
+        Imagen:'../src/Productos/e.jpg'
     }
 ]

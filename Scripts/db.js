@@ -5,7 +5,7 @@ export const DB=[
         Precio:1652,
         Stock:10,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/a.jpg'
+        Imagen:'/src/Productos/a.jpg'
     },
     {
         ID:2,
@@ -13,7 +13,7 @@ export const DB=[
         Precio:1800,
         Stock:5,
         Descripcion:'asasasasas',
-        Imagen:'src/Productos/b.jpg'
+        Imagen:'(src/Productos/b.jpg'
     },
     {
         ID:6,

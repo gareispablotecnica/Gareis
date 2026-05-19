@@ -34,13 +34,13 @@ Filtro.addEventListener('keyup', function () {
     // --> Evitamos que se ejecute el evento por defecto del input
     let Filtros = DB.filter(i => i.Nombre.toLowerCase().includes(Filtro.value.toLowerCase()))
     // --> Llamamos a la función TraerDatos y le pasamos el resultado del filtro como argumento
-    if(Filtros.length>0){
+    if (Filtros.length > 0) {
         TraerDatos(Filtros)
     }
-    else{
-        Contenedor.innerHTML=`<p>Producto no Encontrado</p>`
+    else {
+        Contenedor.innerHTML = `<p>Producto no Encontrado</p>`
     }
-    
+
 })
 
 
@@ -55,9 +55,44 @@ Filtro.addEventListener('keyup', function () {
 //     })
 // }
 
-let contador=0;
+let contador = 0;
 
-window.agregarfavorito=function(){
+window.agregarfavorito = function () {
     contador++;
-    document.getElementById('fav').innerText=contador;
+    document.getElementById('fav').innerText = contador;
 }
+
+
+// ---> Filtros
+const borrarfiltros = document.getElementById('todo')
+const FiltroBuzo = document.getElementById('buzo')
+const FiltroRemera = document.getElementById('remera')
+const FiltroCampera = document.getElementById('campera')
+
+// --> Filtrar
+const FiltrarDatos = (parametro) => {
+    let Filtros = DB.filter(i => i.Nombre.toLowerCase().includes(parametro))
+    // --> Llamamos a la función TraerDatos y le pasamos el resultado del filtro como argumento
+    if (Filtros.length > 0) {
+        TraerDatos(Filtros)
+    }
+    else {
+        Contenedor.innerHTML = `<p>Producto no Encontrado</p>`
+    }
+}
+
+borrarfiltros.addEventListener('click',()=>{
+    FiltrarDatos("")
+})
+
+FiltroBuzo.addEventListener('click',()=>{
+    FiltrarDatos("buzo")
+})
+
+FiltroCampera.addEventListener('click',()=>{
+    FiltrarDatos("campera")
+})
+
+FiltroRemera.addEventListener('click',()=>{
+    FiltrarDatos("remera")
+})

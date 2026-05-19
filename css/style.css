@@ -463,3 +463,22 @@ footer {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.iconos{
+    display: flex;
+    justify-content: center;
+    gap: 0 15px;
+    margin: 20px auto;
+}
+
+.iconos img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transition: all 0.6s ease-in-out;
+}
+
+.iconos img:hover{
+    transform: scale(0.9);
+    filter: drop-shadow(2px 2px 5px black);
+}

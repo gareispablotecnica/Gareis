@@ -16,7 +16,10 @@ function TraerDatos(Datos) {
             <h3>Cantidad: ${i.Stock}</h3>
             <p>${i.Descripcion}</p>
             <img src="${i.Imagen}" alt="img">
-            <button onclick="agregarfavorito()" class="btnfav">❤️</button>        
+            <button onclick="agregarfavorito()" class="btnfav">❤️</button> 
+
+            ${i.Stock<3 ? '<span style=color:red>Stock Bajo</span>' : ""} 
+                  
             <button class="btn btn-primary" onclick="cargarcarrito()">Agregar al Carrito</button>
         `
         Contenedor.appendChild(ContenedorAux)

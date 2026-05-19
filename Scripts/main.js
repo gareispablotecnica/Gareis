@@ -16,7 +16,8 @@ function TraerDatos(Datos) {
             <h3>Cantidad: ${i.Stock}</h3>
             <p>${i.Descripcion}</p>
             <img src="${i.Imagen}" alt="img">
-            <button onclick="agregarfavorito()" class="btnfav">❤️</button>
+            <button onclick="agregarfavorito()" class="btnfav">❤️</button>        
+            <button class="btn btn-primary" onclick="cargarcarrito()">Agregar al Carrito</button>
         `
         Contenedor.appendChild(ContenedorAux)
     });
@@ -81,18 +82,27 @@ const FiltrarDatos = (parametro) => {
     }
 }
 
-borrarfiltros.addEventListener('click',()=>{
+borrarfiltros.addEventListener('click', () => {
     FiltrarDatos("")
 })
 
-FiltroBuzo.addEventListener('click',()=>{
+FiltroBuzo.addEventListener('click', () => {
     FiltrarDatos("buzo")
 })
 
-FiltroCampera.addEventListener('click',()=>{
+FiltroCampera.addEventListener('click', () => {
     FiltrarDatos("campera")
 })
 
-FiltroRemera.addEventListener('click',()=>{
+FiltroRemera.addEventListener('click', () => {
     FiltrarDatos("remera")
 })
+
+
+window.cargarcarrito = function() {
+    Swal.fire({
+        title: "Agregado al Carrito!",
+        icon: "success",
+        draggable: true
+    });
+}

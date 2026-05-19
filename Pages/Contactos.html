@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urban S.A</title>
     <!-- Anexamos la Hoja de Estilos -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -15,12 +15,12 @@
 
     <!-- header.encabezado>img+nav.menu>a*4 + Enter -->
     <header class="encabezado">
-        <img src="src/Logo.png" alt="Logo" title="LogoTipo">
+        <img src="../src/Logo.png" alt="Logo" title="LogoTipo">
         <nav class="menu">
-            <a href="Pages/Nosotros.html" class="ayestaras">Nosotros</a>
+            <a href="" class="ayestaras">Nosotros</a>
             <a href="Pages/Galeria.html" class="ayestaras">Galeria</a>
             <a href="" class="ayestaras">Productos</a>
-            <a href="Pages/Contactos.html" class="btncontactos">Contactos</a>
+            <a href="" class="btncontactos">Contactos</a>
             <a href="" class="favorito">❤️<span id="fav">0</span></a>
         </nav>
     </header>
@@ -40,13 +40,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="src/Intermedio/a.png" class="d-block w-100" alt="...">
+                    <img src="../src/Intermedio/c.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="src/Intermedio/b.png" class="d-block w-100" alt="...">
+                    <img src="../src/Intermedio/a.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="src/Intermedio/c.png" class="d-block w-100" alt="...">
+                    <img src="../src/Intermedio/b.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -63,38 +63,35 @@
     </div>
 
     <main class="cuerpo">
-
-        <div class="contenedor_form">
-            <label for="">Nombre:</label>
-            <input type="text" name="Filtro" id="Filtro">
-            <button type="submit">Buscar</button>
+        <div class="contenedor_contactos">
+            <img src="../src/Galeria/6.jpg" alt="">
+            <form action="">
+                <label for="">Nombre:</label>
+                <input type="text" name="" id="">
+                <label for="">Email:</label>
+                <input type="email" name="" id="">
+                <label for="">Asunto:</label>
+                <input type="text" name="" id="">
+                <label for="">Descripcion:</label>
+                <textarea name="" id=""></textarea>
+                <button class="btn btn-primary">Enviar</button>
+            </form>
         </div>
-
-        <div class="iconos">
-            <img src="src/ico/0.png" alt="Todo" class="btn-todo" id="todo" title="Borrar Filtros">
-            <img src="src/ico/2.png" alt="Buzo" class="btn-buzo" id="buzo" title="Buzos">
-            <img src="src/ico/3.png" alt="Remera" class="btn-remera" id="remera" title="Remeras">
-            <img src="src/ico/4.png" alt="Campera" class="btn-campera" id="campera" title="Camperas">
-        </div>
-
-        <div class="contenedor"></div>
-
-        <div class="Favorito"></div>
 
     </main>
 
     <footer>
         <div class="info">
-            <img src="src/Logo.png" alt="Logo">
+            <img src="../src/Logo.png" alt="Logo">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas officia quae ut aspernatur.
                 Tenetur voluptatem minus, excepturi porro quaerat temporibus nulla, deleniti reprehenderit soluta
                 reiciendis dolor molestias illum omnis.</p>
         </div>
         <div class="redes">
             <div>
-                <img src="src/Logo.png" alt="IG">
-                <img src="src/Logo.png" alt="Github">
-                <img src="src/Logo.png" alt="Whatsapp">
+                <img src="../src/Logo.png" alt="IG">
+                <img src="../src/Logo.png" alt="Github">
+                <img src="../src/Logo.png" alt="Whatsapp">
             </div>
             <div>
                 <iframe
@@ -112,13 +109,11 @@
     </footer>
 
 
-    <script type="module" src="Scripts/main.js"></script>
+    <script type="module" src="../Scripts/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -482,3 +482,37 @@ footer {
     transform: scale(0.9);
     filter: drop-shadow(2px 2px 5px black);
 }
+
+.contenedor_contactos{
+    width: 950px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px black;
+}
+
+.contenedor_contactos img{
+    border-radius: 20px 0 0 20px;
+    width: 50%;
+}
+ form{
+    padding: 20px;
+    width: 50%;
+ }
+
+ form input{
+    font-size: 22px;
+    width: 98%;
+    border-radius: 5px;
+    margin: 10px 0;
+ }
+
+ form textarea{
+    font-size: 22px;
+    width: 98%;
+    height: 220px;
+    border-radius: 5px;
+ }
